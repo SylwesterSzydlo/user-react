@@ -1,8 +1,12 @@
 {
-  "name": "react-counter",
+  "name": "react-list",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://SylwesterSzydlo/github.io/user-react/",
   "dependencies": {
+    "gh": "^1.13.5",
+    "gh-pages": "^2.0.1",
+    "pages": "0.0.16",
     "react": "^16.6.1",
     "react-dom": "^16.6.1",
     "react-scripts": "2.1.1"
@@ -11,6 +15,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
